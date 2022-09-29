@@ -61,7 +61,7 @@ $('#formLogin').on('submit',function(e){
     layer.msg('注册成功');
     // $('#go2login').click()
     localStorage.setItem('token',res.token)
-    location.href = '/home.html'
+    location.href = '/index.html'
     }
   })
 })

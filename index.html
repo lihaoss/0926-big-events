@@ -20,10 +20,16 @@
      
       <ul class="layui-nav layui-layout-right">
         <li class="layui-nav-item layui-hide layui-show-md-inline-block">
-          <a href="javascript:;">
-            <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
-          个人中心
-          </a>
+          <div class="user-box">
+            <div>
+              <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
+            </div>
+            <div class="text-avatar">
+          黑
+            </div>
+            <div class="text">
+          欢迎
+            </div>
           <dl class="layui-nav-child">
             <dd><a href="">基本资料</a></dd>
             <dd><a href="">更换头像</a></dd>
@@ -43,9 +49,19 @@
     <div class="layui-side layui-bg-black">
       <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-
+<div class="user-box">
+  <div>
+    <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
+  </div>
+  <div class="text-avatar">
+黑
+  </div>
+  <div class="text">
+欢迎
+  </div>
+</div>
         <ul class="layui-nav layui-nav-tree" lay-shrink="all">
-        <li class="layui-nav-item"><a href="javascript:;">
+        <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="abc">
           <span class="iconfont icon-home"></span>首页</a></li>
 
           <li class="layui-nav-item">
@@ -73,7 +89,9 @@
     
     <div class="layui-body">
       <!-- 内容主体区域 -->
-      <div style="padding: 15px;"></div>
+      <div style="padding: 15px;">
+      <iframe name="abc" src="/home/dashboard.html"></iframe>
+      </div>
     </div>
     
     <div class="layui-footer">
@@ -84,6 +102,6 @@
   <script src="/assets/lib/layui/layui.all.js"></script>
   <script src="/assets/lib/jquery.js"></script>
   <script src="/assets/js/baseApi.js"></script>
-  <script src="/assets/js/login.js"></script>
+  <script src="/assets/js/index.js"></script>
   </body>
 </html>

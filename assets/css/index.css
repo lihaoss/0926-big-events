@@ -28,6 +28,7 @@ iframe{
 .user-box .layui-nav-img{
   width: 40px;
   height: 40px;
+  display: none;
 }
 .user-box .text-avatar{
   width: 40px;
@@ -42,6 +43,7 @@ iframe{
   font-size: 16px;
   margin-right: 10px;
   user-select: none;
+  /* display: none; */
 }
 .user-box .text{
   font-size: 12px;

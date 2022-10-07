@@ -29,14 +29,14 @@ $('#formReg').on('submit',function(e){
 e.preventDefault()
 $.ajax({
   method:'POST',
-  url:'http://big-event-vue-api-t.itheima.net/api/reg',
-  contentType:'application/json',
+  url:'/api/reg',
+  // contentType:'application/json',
   // data:JSON.stringify({
   //   username:$('.reg-wrap [name=username]').val(),
   //   password:$('.reg-wrap [name=password]').val(),
   //   repassword:$('.reg-wrap [name=repassword]').val()
   // }),
-  data:format2Json($(this).serialize()),
+  data:$(this).serialize(),
   success(res){
   if(res.code!==0)  return layer.msg(res.message)
   layer.msg('注册成功');

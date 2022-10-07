@@ -30,7 +30,7 @@ function renderAvatar(res){
 if(res.user_pic){
   $('.text-avatar').hide()
 
-  $('.user-box img').css('src',res.user_pic).show()
+  $('.user-box img').attr('src',res.user_pic).show()
 }else{
   $('.layui-nav-img').hide()
   const name = res.nickname || res.username
